@@ -1,7 +1,7 @@
 
-LISTA DE EXERCICIOS 01
+# LISTA DE EXERCICIOS 01
 
-1. Crie uma aplicação para efetuar o cálculo do índice de massa corporal. Considere os seguintes critérios: 
+## 1. Crie uma aplicação para efetuar o cálculo do índice de massa corporal. Considere os seguintes critérios: 
 1) Ao executar o script a aplicação deve solicitar a entrada do nome da pessoa. 
 2) Na sequência a aplicação deve solicitar que seja informada a altura da pessoa em centímetros. 
 3) Na sequência a aplicação deve solicitar que seja informado o peso da pessoa. 
@@ -20,7 +20,7 @@ h) Se M for maior que 40: Obesidade grau III
 8) Ao término o sistema deve fornecer a seguinte saída para o usuário: 
 “<Nome> possui índice de massa corporal igual a <m> , sendo classificado como: .” *As informações em vermelho são variáveis e devem ser substituídas pelos seus respectivos valores calculadas dentro da aplicação. 
 
-2. Crie uma aplicação capaz de identificar a faixa etária com base na idade informada pelo usuário. Considere os seguintes critérios: 
+## 2. Crie uma aplicação capaz de identificar a faixa etária com base na idade informada pelo usuário. Considere os seguintes critérios: 
 Se a idade informada for maior ou igual a 0 e menor que 15, exibir a mensagem “Criança”. Se a idade informada for maior ou igual a 15 e menor que 30, exibir a mensagem “Jovem”. Se a idade informada for maior ou igual a 30 e menor que 60, exibir a mensagem “Adulto”. Se a idade informada for maior ou igual a 60, exibir a mensagem “Idoso”. 
 Fique à vontade para utilizar qualquer uma das funções aprendidas para exibição de dados para o usuário.
 Um aluno está encontrando dificuldades para entender como é composta a média final de determinada disciplina, a qual é composta pelas três notas seguintes:
@@ -31,7 +31,6 @@ Um aluno está encontrando dificuldades para entender como é composta a média 
 | Prova do semestre | 5 |
 | Trabalho Teórico | 3 | 
  
-
 Desenvolva uma aplicação em JS que receba as 3 notas, calcule e imprima a média ponderada.
 A média ponderada é calculada pela fórmula:
 ((peso1 * nota1) + (peso2*nota2)+(peso3*nota3))/ (soma dos pesos)
@@ -50,7 +49,7 @@ Ao término, a aplicação deverá gerar como saída:
 
 **A média do aluno é: 99,99 e a sua classificação é X**
  
-3. Uma empresa do ramo metalmecânico está realizando uma pesquisa junto a transportadoras para verificar o preço do transporte de seus produtos que serão entregues a seus clientes em outros estados. Ao final da pesquisa, foi selecionada uma transportadora, com a qual foi fechado o transporte dos produtos. O cliente pode selecionar se quer a sua entrega com rastreamento ou não. Assim, deverá ser feita uma pergunta ao cliente. Deseja rastreamento (S-Sim e N-Não)? Se a resposta for “sim”, será cobrada uma taxa de R$ 200,00 pela carga. Cálculo do frete (calcular o valor pelo número de peças transportadas): • Três variáveis influenciam o valor do frete: o número de peças, a região e a distância em quilômetros. • Até mil peças – o valor será conforme a região apresentada na tabela abaixo. O valor é cobrado por cada peça transportada. • Acima de mil peças – valor normal para até mil peças; o número de peças que ultrapassar mil tem desconto conforme a região. Exemplo: Se um cliente comprar 1.200 peças, as quais serão enviados à região 1, que é Sudeste. Será cobrado frete da seguinte forma: para as mil peças, R$ 1,20 cada peça. Para as 200 a mais, será dado um desconto de 12% sobre o valor de R$ 1,20, pagando 1,056 pelo frete de cada peça das 200 restantes. Ficará (1000 * 1.2) + (200* 1.056) = R$ 1.411,20 de frete pelas peças transportadas. A distância para o transporte deve ser informada, pois, para cada quilômetro, é cobrado um litro de combustível, que deverá ser lido ao iniciar o algoritmo. Por questões de logística, a empresa realiza entregas somente para as regiões Sul, Sudeste e Centro-oeste, e cada uma possui um valor de frete com relação à quantidade de peças transportadas, conforme a tabela:
+## 3. Uma empresa do ramo metalmecânico está realizando uma pesquisa junto a transportadoras para verificar o preço do transporte de seus produtos que serão entregues a seus clientes em outros estados. Ao final da pesquisa, foi selecionada uma transportadora, com a qual foi fechado o transporte dos produtos. O cliente pode selecionar se quer a sua entrega com rastreamento ou não. Assim, deverá ser feita uma pergunta ao cliente. Deseja rastreamento (S-Sim e N-Não)? Se a resposta for “sim”, será cobrada uma taxa de R$ 200,00 pela carga. Cálculo do frete (calcular o valor pelo número de peças transportadas): • Três variáveis influenciam o valor do frete: o número de peças, a região e a distância em quilômetros. • Até mil peças – o valor será conforme a região apresentada na tabela abaixo. O valor é cobrado por cada peça transportada. • Acima de mil peças – valor normal para até mil peças; o número de peças que ultrapassar mil tem desconto conforme a região. Exemplo: Se um cliente comprar 1.200 peças, as quais serão enviados à região 1, que é Sudeste. Será cobrado frete da seguinte forma: para as mil peças, R$ 1,20 cada peça. Para as 200 a mais, será dado um desconto de 12% sobre o valor de R$ 1,20, pagando 1,056 pelo frete de cada peça das 200 restantes. Ficará (1000 * 1.2) + (200* 1.056) = R$ 1.411,20 de frete pelas peças transportadas. A distância para o transporte deve ser informada, pois, para cada quilômetro, é cobrado um litro de combustível, que deverá ser lido ao iniciar o algoritmo. Por questões de logística, a empresa realiza entregas somente para as regiões Sul, Sudeste e Centro-oeste, e cada uma possui um valor de frete com relação à quantidade de peças transportadas, conforme a tabela:
 
 | Região | Nome da região | Valor do frete para até mil peças | Valor do frete para mais de mil peças |
 | --- | --- | --- | --- |
@@ -65,7 +64,7 @@ Valor do frete pelas peças: 9999.99
 Valor do frete por quilômetro: 999.99 
 Total do frete: 999.99 
 
-4. Sabendo que uma rede hoteleira deseja informatizar sua folha de pagamento, desenvolva em pseudocódigo uma solução conforme regras apresentadas pela empresa, de acordo com as especificações abaixo: O funcionário possui os seguintes dados de entrada: código, número de horas trabalhadas no mês, turno de trabalho (M – matutino, V – vespertino ou N – noturno), categoria (F – funcionário, G – gerente). Faça um algoritmo que: - Leia as informações dos funcionários: código (inteiro), número de horas trabalhadas (inteiro) no mês, turno (caractere) e categoria (caractere). Não leia somente o valor da hora trabalhada (real), pois será calculada. - Considere sempre a digitação de uma única letra para representar o turno de trabalho e a categoria do funcionário, conforme as tabelas:
+## 4. Sabendo que uma rede hoteleira deseja informatizar sua folha de pagamento, desenvolva em pseudocódigo uma solução conforme regras apresentadas pela empresa, de acordo com as especificações abaixo: O funcionário possui os seguintes dados de entrada: código, número de horas trabalhadas no mês, turno de trabalho (M – matutino, V – vespertino ou N – noturno), categoria (F – funcionário, G – gerente). Faça um algoritmo que: - Leia as informações dos funcionários: código (inteiro), número de horas trabalhadas (inteiro) no mês, turno (caractere) e categoria (caractere). Não leia somente o valor da hora trabalhada (real), pois será calculada. - Considere sempre a digitação de uma única letra para representar o turno de trabalho e a categoria do funcionário, conforme as tabelas:
 
 | Turno | Descrição do turno |
 | --- | --- |
@@ -94,7 +93,7 @@ Total do frete: 999.99
  
 - Imprima como saída o código, número de horas trabalhadas, valor da hora trabalhada, salário inicial, auxílio alimentação e salário final (salário inicial + auxílio-alimentação).
 
-5. Crie uma aplicação para efetuar cálculo aritméticos de soma e subtração.
+## 5. Crie uma aplicação para efetuar cálculo aritméticos de soma e subtração.
 Considere os seguintes critérios:
 1) Ao executar o script a aplicação deve solicitar a entrada de um número, seguido de uma operação de soma ou subtração e posteriormente seguido de um segundo número.
 2) A operação deve ser inserida pelo usuário de forma textual, ou seja, quando o sistema solicita a operação o usuário deve informar o texto ‘soma’ ou ‘subtração’ (sem as aspas).
