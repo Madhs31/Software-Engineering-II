@@ -66,7 +66,7 @@ Ao término, a aplicação deverá gerar como saída:
 - Total do frete: 999.99 
  
 
-## 4. Desenvolva uma aplicação que Calcule o valor da hora trabalhada, conforme as regras apresentadas na tabela
+## 5. Desenvolva uma aplicação que Calcule o valor da hora trabalhada, conforme as regras apresentadas na tabela
 
  Sabendo que uma rede hoteleira deseja informatizar sua folha de pagamento, desenvolva em pseudocódigo uma solução conforme regras apresentadas pela empresa, de acordo com as especificações abaixo: O funcionário possui os seguintes dados de entrada: código, número de horas trabalhadas no mês, turno de trabalho (M – matutino, V – vespertino ou N – noturno), categoria (F – funcionário, G – gerente). Faça um algoritmo que: - Leia as informações dos funcionários: código (inteiro), número de horas trabalhadas (inteiro) no mês, turno (caractere) e categoria (caractere). Não leia somente o valor da hora trabalhada (real), pois será calculada. - Considere sempre a digitação de uma única letra para representar o turno de trabalho e a categoria do funcionário, conforme as tabelas:
 
@@ -100,7 +100,7 @@ Ao término, a aplicação deverá gerar como saída:
  
  **- Imprima como saída o código, número de horas trabalhadas, valor da hora trabalhada, salário inicial, auxílio alimentação e salário final (salário inicial + auxílio-alimentação).**
 
-## 5. Crie uma aplicação para efetuar cálculo aritméticos de soma e subtração.
+## 6. Crie uma aplicação para efetuar cálculo aritméticos de soma e subtração.
 Considere os seguintes critérios:
 1) Ao executar o script a aplicação deve solicitar a entrada de um número, seguido de uma operação de soma ou subtração e posteriormente seguido de um segundo número.
 2) A operação deve ser inserida pelo usuário de forma textual, ou seja, quando o sistema solicita a operação o usuário deve informar o texto ‘soma’ ou ‘subtração’ (sem as aspas).
