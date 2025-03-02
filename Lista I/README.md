@@ -31,7 +31,7 @@ Um aluno está encontrando dificuldades para entender como é composta a média 
 | Prova do semestre | 5 |
 | Trabalho Teórico | 3 | 
  
-Desenvolva uma aplicação em JS que receba as 3 notas, calcule e imprima a média ponderada.
+## 3. Desenvolva uma aplicação em JS que receba as 3 notas, calcule e imprima a média ponderada.
 A média ponderada é calculada pela fórmula:
 ((peso1 * nota1) + (peso2*nota2)+(peso3*nota3))/ (soma dos pesos)
 Após concluir a média, o algoritmo deverá classificá-la conforme tabela abaixo.
@@ -49,7 +49,9 @@ Ao término, a aplicação deverá gerar como saída:
 
 **A média do aluno é: 99,99 e a sua classificação é X**
  
-## 3. Uma empresa do ramo metalmecânico está realizando uma pesquisa junto a transportadoras para verificar o preço do transporte de seus produtos que serão entregues a seus clientes em outros estados. Ao final da pesquisa, foi selecionada uma transportadora, com a qual foi fechado o transporte dos produtos. O cliente pode selecionar se quer a sua entrega com rastreamento ou não. Assim, deverá ser feita uma pergunta ao cliente. Deseja rastreamento (S-Sim e N-Não)? Se a resposta for “sim”, será cobrada uma taxa de R$ 200,00 pela carga. Cálculo do frete (calcular o valor pelo número de peças transportadas): • Três variáveis influenciam o valor do frete: o número de peças, a região e a distância em quilômetros. • Até mil peças – o valor será conforme a região apresentada na tabela abaixo. O valor é cobrado por cada peça transportada. • Acima de mil peças – valor normal para até mil peças; o número de peças que ultrapassar mil tem desconto conforme a região. Exemplo: Se um cliente comprar 1.200 peças, as quais serão enviados à região 1, que é Sudeste. Será cobrado frete da seguinte forma: para as mil peças, R$ 1,20 cada peça. Para as 200 a mais, será dado um desconto de 12% sobre o valor de R$ 1,20, pagando 1,056 pelo frete de cada peça das 200 restantes. Ficará (1000 * 1.2) + (200* 1.056) = R$ 1.411,20 de frete pelas peças transportadas. A distância para o transporte deve ser informada, pois, para cada quilômetro, é cobrado um litro de combustível, que deverá ser lido ao iniciar o algoritmo. Por questões de logística, a empresa realiza entregas somente para as regiões Sul, Sudeste e Centro-oeste, e cada uma possui um valor de frete com relação à quantidade de peças transportadas, conforme a tabela:
+## 4. Desenvolva uma aplicação JS que efetue a leitura da distância em quilômetros do frete, a quantidade de peças que serão transportadas, a região (em número) e determine se o cliente quer rastreamento e calcule e imprima o valor final do frete. 
+
+ Uma empresa do ramo metalmecânico está realizando uma pesquisa junto a transportadoras para verificar o preço do transporte de seus produtos que serão entregues a seus clientes em outros estados. Ao final da pesquisa, foi selecionada uma transportadora, com a qual foi fechado o transporte dos produtos. O cliente pode selecionar se quer a sua entrega com rastreamento ou não. Assim, deverá ser feita uma pergunta ao cliente. Deseja rastreamento (S-Sim e N-Não)? Se a resposta for “sim”, será cobrada uma taxa de R$ 200,00 pela carga. Cálculo do frete (calcular o valor pelo número de peças transportadas): • Três variáveis influenciam o valor do frete: o número de peças, a região e a distância em quilômetros. • Até mil peças – o valor será conforme a região apresentada na tabela abaixo. O valor é cobrado por cada peça transportada. • Acima de mil peças – valor normal para até mil peças; o número de peças que ultrapassar mil tem desconto conforme a região. Exemplo: Se um cliente comprar 1.200 peças, as quais serão enviados à região 1, que é Sudeste. Será cobrado frete da seguinte forma: para as mil peças, R$ 1,20 cada peça. Para as 200 a mais, será dado um desconto de 12% sobre o valor de R$ 1,20, pagando 1,056 pelo frete de cada peça das 200 restantes. Ficará (1000 * 1.2) + (200* 1.056) = R$ 1.411,20 de frete pelas peças transportadas. A distância para o transporte deve ser informada, pois, para cada quilômetro, é cobrado um litro de combustível, que deverá ser lido ao iniciar o algoritmo. Por questões de logística, a empresa realiza entregas somente para as regiões Sul, Sudeste e Centro-oeste, e cada uma possui um valor de frete com relação à quantidade de peças transportadas, conforme a tabela:
 
 | Região | Nome da região | Valor do frete para até mil peças | Valor do frete para mais de mil peças |
 | --- | --- | --- | --- |
@@ -57,14 +59,16 @@ Ao término, a aplicação deverá gerar como saída:
 | 2 | Sudeste | R$ 1,20 | 12% |
 | 3 | Centro- | R$ 1,30 | 13% |
 
-Desenvolva uma aplicação JS que efetue a leitura da distância em quilômetros do frete, a quantidade de peças que serão transportadas, a região (em número) e determine se o cliente quer rastreamento. 
-Calcule e imprima o valor final do frete. 
-Ao término, devem ser exibidas as seguintes informações: Taxa do rastreamento: 999,99 
-Valor do frete pelas peças: 9999.99 
-Valor do frete por quilômetro: 999.99 
-Total do frete: 999.99 
+**Ao término, devem ser exibidas as seguintes informações:**
+- Taxa do rastreamento: 999,99
+- Valor do frete pelas peças: 9999.99 
+- Valor do frete por quilômetro: 999.99 
+- Total do frete: 999.99 
+ 
 
-## 4. Sabendo que uma rede hoteleira deseja informatizar sua folha de pagamento, desenvolva em pseudocódigo uma solução conforme regras apresentadas pela empresa, de acordo com as especificações abaixo: O funcionário possui os seguintes dados de entrada: código, número de horas trabalhadas no mês, turno de trabalho (M – matutino, V – vespertino ou N – noturno), categoria (F – funcionário, G – gerente). Faça um algoritmo que: - Leia as informações dos funcionários: código (inteiro), número de horas trabalhadas (inteiro) no mês, turno (caractere) e categoria (caractere). Não leia somente o valor da hora trabalhada (real), pois será calculada. - Considere sempre a digitação de uma única letra para representar o turno de trabalho e a categoria do funcionário, conforme as tabelas:
+## 4. Desenvolva uma aplicação que Calcule o valor da hora trabalhada, conforme as regras apresentadas na tabela
+
+ Sabendo que uma rede hoteleira deseja informatizar sua folha de pagamento, desenvolva em pseudocódigo uma solução conforme regras apresentadas pela empresa, de acordo com as especificações abaixo: O funcionário possui os seguintes dados de entrada: código, número de horas trabalhadas no mês, turno de trabalho (M – matutino, V – vespertino ou N – noturno), categoria (F – funcionário, G – gerente). Faça um algoritmo que: - Leia as informações dos funcionários: código (inteiro), número de horas trabalhadas (inteiro) no mês, turno (caractere) e categoria (caractere). Não leia somente o valor da hora trabalhada (real), pois será calculada. - Considere sempre a digitação de uma única letra para representar o turno de trabalho e a categoria do funcionário, conforme as tabelas:
 
 | Turno | Descrição do turno |
 | --- | --- |
@@ -77,13 +81,16 @@ Total do frete: 999.99
 | G | Gerente |
 | F | Funcionário |
  
-- Calcule o valor da hora trabalhada, conforme as regras apresentadas na tabela a seguir. O valor do salário-mínimo deve ser solicitado pelo algoritmo, pois ele varia de estado para estado e a rede de hotéis está distribuída por todo o País. Utilizar o comando de seleção múltipla (ou um comando escolha e outro pode ser se encadeado – não utilizar se simples para esse item) para testar a categoria e o turno para calcular o valor da hora trabalhada.
+**- O valor do salário-mínimo deve ser solicitado pelo algoritmo, pois ele varia de estado para estado e a rede de hotéis está distribuída por todo o País. Utilizar o comando de seleção múltipla (ou um comando escolha e outro pode ser se encadeado – não utilizar se simples para esse item) para testar a categoria e o turno para calcular o valor da hora trabalhada.**
 
-| G | M ou V | 4% do salário mínimo estadual |
-| F | N | 2% do salário mínimo estadual |
-| F | M ou V | 1% do salário mínimo estadual |
+| Categoria | Turno | Porcentagem |  |
+| --- | --- | --- | --- |
+| G | M ou V | 4% do salário mínimo estadual |  |
+| F | N | 2% do salário mínimo estadual |  |
+| F | M ou V | 1% do salário mínimo estadual |  |
+
  
-- Calcule o salário inicial do funcionário com base no valor da hora trabalhada e no número de horas trabalhadas. - Calcule o valor do auxílio-alimentação recebido pelo funcionário de acordo com seu salário inicial, conforme a tabela a seguir. Utilizar o comando de seleção composto encadeado.
+ **- Calcule o salário inicial do funcionário com base no valor da hora trabalhada e no número de horas trabalhadas. - Calcule o valor do auxílio-alimentação recebido pelo funcionário de acordo com seu salário inicial, conforme a tabela a seguir. Utilizar o comando de seleção composto encadeado.**
 
 | Salário Inicial | Auxílio-Alimentação |
 | --- | --- |
@@ -91,7 +98,7 @@ Total do frete: 999.99
 | Acima de 800,00 até 1.200,00 | 20% do salário inicial |
 | Acima de 1.200,00 | 15% do salário inicial | 
  
-- Imprima como saída o código, número de horas trabalhadas, valor da hora trabalhada, salário inicial, auxílio alimentação e salário final (salário inicial + auxílio-alimentação).
+ **- Imprima como saída o código, número de horas trabalhadas, valor da hora trabalhada, salário inicial, auxílio alimentação e salário final (salário inicial + auxílio-alimentação).**
 
 ## 5. Crie uma aplicação para efetuar cálculo aritméticos de soma e subtração.
 Considere os seguintes critérios:
