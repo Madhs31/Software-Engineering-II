@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cálculo de Salário</title>
+    <script>
+        function calcularSalario() {
+            let codigo = parseInt(prompt("Informe o código do funcionário:"));
+            let horasTrabalhadas = parseInt(prompt("Informe o número de horas trabalhadas no mês:"));
+            let turno = prompt("Informe o turno de trabalho (M - Matutino, V - Vespertino, N - Noturno):").toUpperCase();
+            let categoria = prompt("Informe a categoria (F - Funcionário, G - Gerente):").toUpperCase();
+            let salarioMinimo = parseFloat(prompt("Informe o salário mínimo estadual:"));
+            
+            let valorHora = 0;
+            
+            switch (categoria) {
+                case "G":
+                    if (turno === "M" || turno === "V") {
+                        valorHora = 0.04 * salarioMinimo;
+                    }
+                    break;
+                case "F":
+                    if (turno === "N") {
+                        valorHora = 0.02 * salarioMinimo;
+                    } else if (turno === "M" || turno === "V") {
+                        valorHora = 0.01 * salarioMinimo;
+                    }
+                    break;
+                default:
+                    alert("Categoria inválida!");
+                    return;
+            }
+            
+            let salarioInicial = valorHora * horasTrabalhadas;
+            let auxilioAlimentacao = 0;
+            
+            if (salarioInicial <= 800) {
+                auxilioAlimentacao = 0.25 * salarioInicial;
+            } else if (salarioInicial > 800 && salarioInicial <= 1200) {
+                auxilioAlimentacao = 0.20 * salarioInicial;
+            } else {
+                auxilioAlimentacao = 0.15 * salarioInicial;
+            }
+            
+            let salarioFinal = salarioInicial + auxilioAlimentacao;
+            
+            alert(`Código: ${codigo}\n` +
+                  `Horas Trabalhadas: ${horasTrabalhadas}\n` +
+                  `Valor da Hora Trabalhada: R$ ${valorHora.toFixed(2)}\n` +
+                  `Salário Inicial: R$ ${salarioInicial.toFixed(2)}\n` +
+                  `Auxílio Alimentação: R$ ${auxilioAlimentacao.toFixed(2)}\n` +
+                  `Salário Final: R$ ${salarioFinal.toFixed(2)}`);
+        }
+        
+        calcularSalario();
+    </script>
+</head>
+</html>

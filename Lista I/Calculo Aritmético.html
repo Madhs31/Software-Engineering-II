@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cálculo Aritmético</title>
+    <script>
+        function calcular(num1, num2, operacao) {
+            if (operacao === "soma") {
+                return num1 + num2;
+            } else if (operacao === "subtração") {
+                return num1 - num2;
+            } else {
+                return "Operação inválida";
+            }
+        }
+
+        function executarCalculo() {
+            let num1 = parseFloat(prompt("Informe o primeiro número:"));
+            let operacao = prompt("Informe a operação (soma ou subtração):").toLowerCase();
+            let num2 = parseFloat(prompt("Informe o segundo número:"));
+            
+            let resultado = calcular(num1, num2, operacao);
+            alert(`O resultado é: ${resultado}`);
+        }
+        
+        executarCalculo();
+    </script>
+</head>
+</html>

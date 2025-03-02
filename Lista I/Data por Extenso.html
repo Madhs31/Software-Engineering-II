@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Data por Extenso</title>
+    <script>
+        function converterDataExtenso(data) {
+            let meses = ["janeiro", "fevereiro", "março", "abril", "maio", "junho", "julho", "agosto", "setembro", "outubro", "novembro", "dezembro"];
+            let partes = data.split("/");
+            if (partes.length !== 3) {
+                return "Formato de data inválido";
+            }
+            let dia = partes[0];
+            let mes = parseInt(partes[1]) - 1;
+            let ano = partes[2];
+            
+            if (mes < 0 || mes > 11) {
+                return "Mês inválido";
+            }
+            return `${dia} de ${meses[mes]} de ${ano}`;
+        }
+
+        function solicitarData() {
+            let data = prompt("Informe uma data no formato dd/mm/aaaa:");
+            let dataExtenso = converterDataExtenso(data);
+            alert(`Data por extenso: ${dataExtenso}`);
+        }
+        
+        solicitarData();
+    </script>
+</head>
+</html>

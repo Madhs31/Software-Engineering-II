@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cálculo de Frete</title>
+    <script>
+        function calcularFrete() {
+            let distancia = parseFloat(prompt("Informe a distância do frete em milhas:"));
+            let quantidadePecas = parseInt(prompt("Informe a quantidade de peças a serem transportadas:"));
+            let regiao = parseInt(prompt("Informe a região (1 - Sul, 2 - Sudeste, 3 - Centro-Oeste):"));
+            let rastreamento = prompt("Deseja rastreamento? (S-Sim / N-Não)").toUpperCase();
+            
+            let taxaRastreamento = (rastreamento === "S") ? 200 : 0;
+            let precoPorPeca = 0, desconto = 0;
+            
+            switch (regiao) {
+                case 1:
+                    precoPorPeca = 1.00;
+                    desconto = 0.10;
+                    break;
+                case 2:
+                    precoPorPeca = 1.20;
+                    desconto = 0.12;
+                    break;
+                case 3:
+                    precoPorPeca = 1.30;
+                    desconto = 0.13;
+                    break;
+                default:
+                    alert("Região inválida!");
+                    return;
+            }
+            
+            let valorFretePecas = (quantidadePecas <= 1000) ? 
+                quantidadePecas * precoPorPeca : 
+                (1000 * precoPorPeca) + ((quantidadePecas - 1000) * precoPorPeca * (1 - desconto));
+            
+            let valorFreteMilhas = distancia * 1; // 1 litro por milha
+            let totalFrete = taxaRastreamento + valorFretePecas + valorFreteMilhas;
+            
+            alert(`Taxa de rastreamento: R$ ${taxaRastreamento.toFixed(2)}\n` +
+                  `Valor do frete pelas peças: R$ ${valorFretePecas.toFixed(2)}\n` +
+                  `Valor do frete por milhas: R$ ${valorFreteMilhas.toFixed(2)}\n` +
+                  `Total do frete: R$ ${totalFrete.toFixed(2)}`);
+        }
+        
+        calcularFrete();
+    </script>
+</head>
+</html>
+
+
