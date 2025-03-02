@@ -59,7 +59,38 @@ Ao término, a aplicação deverá gerar como saída:
  
 ## 4. Desenvolva uma aplicação JS que efetue a leitura da distância em quilômetros do frete, a quantidade de peças que serão transportadas, a região (em número) e determine se o cliente quer rastreamento e calcule e imprima o valor final do frete. 
 
- Uma empresa do ramo metalmecânico está realizando uma pesquisa junto a transportadoras para verificar o preço do transporte de seus produtos que serão entregues a seus clientes em outros estados. Ao final da pesquisa, foi selecionada uma transportadora, com a qual foi fechado o transporte dos produtos. O cliente pode selecionar se quer a sua entrega com rastreamento ou não. Assim, deverá ser feita uma pergunta ao cliente. Deseja rastreamento (S-Sim e N-Não)? Se a resposta for “sim”, será cobrada uma taxa de R$ 200,00 pela carga. Cálculo do frete (calcular o valor pelo número de peças transportadas): • Três variáveis influenciam o valor do frete: o número de peças, a região e a distância em quilômetros. • Até mil peças – o valor será conforme a região apresentada na tabela abaixo. O valor é cobrado por cada peça transportada. • Acima de mil peças – valor normal para até mil peças; o número de peças que ultrapassar mil tem desconto conforme a região. Exemplo: Se um cliente comprar 1.200 peças, as quais serão enviados à região 1, que é Sudeste. Será cobrado frete da seguinte forma: para as mil peças, R$ 1,20 cada peça. Para as 200 a mais, será dado um desconto de 12% sobre o valor de R$ 1,20, pagando 1,056 pelo frete de cada peça das 200 restantes. Ficará (1000 * 1.2) + (200* 1.056) = R$ 1.411,20 de frete pelas peças transportadas. A distância para o transporte deve ser informada, pois, para cada quilômetro, é cobrado um litro de combustível, que deverá ser lido ao iniciar o algoritmo. Por questões de logística, a empresa realiza entregas somente para as regiões Sul, Sudeste e Centro-oeste, e cada uma possui um valor de frete com relação à quantidade de peças transportadas, conforme a tabela:
+<br> Uma empresa do ramo metalmecânico está realizando uma pesquisa com transportadoras para verificar o preço do transporte de seus produtos destinados a clientes em outros estados. Após a pesquisa, foi selecionada uma transportadora, com o qual foi fechado o contrato para a entrega dos produtos.
+
+<br> O cliente pode escolher se deseja rastrear sua entrega ou não. Assim, deve ser feita a seguinte pergunta:
+<br>**"Deseja rastreamento? (S - Sim / N - Não)"**
+<br> Se a resposta for "Sim" , será cobrada uma taxa adicional de R$ 200,00 pelo frete.
+
+<br>  O valor do frete é calculado com base no número de peças transportadas, na região de entrega e na distância percorrida (em milhas).
+
+- Até 1.000 peças → O valor do frete é determinado pela região, conforme tabela específica. O custo é cobrado pela peça transportada.
+- Acima de 1.000 peças →
+- O valor normal é aplicado para as primeiras 1.000 peças.
+- Para as peças excedentes, há um desconto conforme a região de destino.
+
+**Exemplo:**
+Um cliente compra 1.200 peças para entrega na Região 1 (Sudeste) . O valor base do frete na região é R$ 1,20 por peça . Para as 200 peças excedentes , aplica-se um desconto de 12% , resultando em um valor de R$ 1.056 por peça .
+
+<br> O cálculo será realizado da seguinte forma:
+
+- 1.000 peças → 1.000 × 1,20 = R$ 1.200,00
+- 200 peças excedentes → 200 × 1.056 = R$ 211,20
+- Total do frete = R$ 1.411,20
+
+A distância percorrida no transporte deve ser informada, pois, para cada milha percorrida , será consumido 1 litro de combustível . Esse dado deve ser registrado no início do algoritmo.
+
+<br>Por questões logísticas, a empresa realiza entregas apenas para as seguintes regiões:
+
+- Sul
+- Sudeste
+- Centro-Oeste
+
+Cada uma dessas regiões possui um valor de frete específico, de acordo com a quantidade de peças transportadas, conforme a tabela:
+
 
 | Região | Nome da região | Valor do frete para até mil peças | Valor do frete para mais de mil peças |
 | --- | --- | --- | --- |
